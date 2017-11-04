@@ -32,7 +32,7 @@ class List:
 
     def __getitem__(self, i):
         if i >= self.count or i < 0:
-            print("explosion")
+            raise Exception('IndexOutOfRange Exception')
         return self.items[i]
 
 
